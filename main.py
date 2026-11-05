@@ -19,7 +19,9 @@ def calculate_file_hash(file_path):
 
     return sha256.hexdigest()
 
+file_path = input("Drag a file here and press Enter: ").strip().strip('"')
 
-print("Z-Scan initialized!")
-
-print("File fingerprint:", calculate_file_hash("sample.txt"))
+try:
+    print("File fingerprint:", calculate_file_hash(file_path))
+except FileNotFoundError:
+    print("Error: File not found. Please check the file path.")
