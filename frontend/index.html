@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Scan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="home-screen">
+
+        <h1 class="logo">Z-SCANNER</h1>
+
+        <div class="upload-panel" id="drop-zone">
+
+            <div class="upload-content">
+                <h2>Drag your file here</h2>
+                <p>Or select a file from your computer</p>
+                 <div class="file-info" id="file-info" hidden>
+                     <p id="file-name"></p>
+                     <p id="file-type"></p>
+                     <p id="file-size"></p>
+                     <button id="scan-button" hidden>
+                         Scan File
+                     </button>
+
+                     <div id="scan-result" hidden>
+                       <h3>Scan Results</h3>
+                       <p id="scan-status"></p>
+                       <p id="scan-hash"></p>
+                     </div>
+                 </div>
+
+                <button id="browse-button">
+                    Browse Files
+                </button>
+
+                <input type="file" id="file-input" hidden>
+            </div>
+
+        </div>
+
+        <p class="footer">Z-Scan | File Security Scanner</p>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

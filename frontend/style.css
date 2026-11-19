@@ -1,0 +1,135 @@
+
+/* General page styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #252525;
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+}
+
+/* Main home screen */
+.home-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Z-Scan logo */
+.logo {
+    color: #00d9ff;
+    font-size: 65px;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin-bottom: 55px;
+    text-shadow: 4px 4px 3px #111111;
+}
+
+/* File upload panel */
+.upload-panel {
+    width: 750px;
+    max-width: 90%;
+    min-height: 350px;
+    background-color: #a9d9f5;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+/* Upload panel content */
+.upload-content h2 {
+    color: #202020;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.upload-content p {
+    color: #444444;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+/* Browse button */
+#browse-button {
+    background-color: #252525;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#browse-button:hover {
+    background-color: #007f9e;
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    color: #888888;
+    font-size: 13px;
+    margin-top: 35px;
+}
+
+/* Selected file information */
+.file-info {
+    background-color: #d1ebfa;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.file-info p {
+    margin: 5px;
+    font-size: 14px;
+    color: #202020;
+}
+
+/* Scan button */
+#scan-button {
+    background-color: #007f9e;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 13px 35px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#scan-button:hover {
+    background-color: #005f78;
+    transform: scale(1.05);
+}
+
+/* Scan results */
+#scan-result {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #d1ebfa;
+    border-radius: 12px;
+    overflow-wrap: anywhere;
+}
+
+#scan-result h3 {
+    color: #202020;
+    margin-bottom: 12px;
+}
+
+#scan-result p {
+    color: #202020;
+    font-size: 14px;
+    margin: 8px 0;
+}
