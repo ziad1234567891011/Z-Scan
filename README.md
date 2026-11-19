@@ -1,7 +1,4 @@
-## latest updates
+**Z-Scan v1.7 Update**
 
-Z-Scan now allows the user to choose which file they want to scan instead of relying on a fixed file name. the user can enter the file path directly into the terminal or drag and drop a file into it, making the scanning process easier and more flexible.
-
-another improvement is the addition of basic error handling. if the user enters a file path that does not exist, Z-Scan detects the `FileNotFoundError` and displays a clear message asking the user to check the path instead of showing a long python traceback.
-
-these updates make Z-Scan easier to use and help prevent unexpected errors when selecting files. they also make the project more reliable as i continue developing its scanning features.
+Since version 1.5, Z-Scan has received several improvements, including better error handling in v1.6 and a new web interface in v1.7. The interface now supports browsing and dragging files, displaying file information, and scanning files directly through a Scan File button.
+The scanning process is now connected to the Flask backend, which calculates the file's SHA-256 fingerprint and displays the results directly on the interface.
